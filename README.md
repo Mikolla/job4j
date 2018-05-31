@@ -1,3 +1,2 @@
-”чебный репозиторий. ’очу стать java champion как яков ‘айн. ѕланиую закончить учебу к концу 2018 года и в начале 2019 найти работу.
-
-“ут будут лежать мои учебные проекты.
+Bonderenko Nikolay student repo. My gaol is to finish this course and to find a job till the end of 2018.
+Here my most interesting projects will be.
