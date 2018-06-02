@@ -1,0 +1,19 @@
+package ru.job4j.calculate;
+
+/**
+* Class Calculate Решение задачи 001 урок 1-й
+* @author Bondarenko 
+* @version 01
+* @since 02.06.2018
+*/
+
+public class Calculate {
+	/**
+	* main вывод строки в консоль
+	* @param args args
+	*/
+  
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
