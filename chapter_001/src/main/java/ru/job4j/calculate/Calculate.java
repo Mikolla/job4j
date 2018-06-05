@@ -2,7 +2,7 @@ package ru.job4j.calculate;
 
 /**
 * Class Calculate Решение задачи 001 урок 1-й
-* @author Bondarenko 
+* @author Bondarenko Nikolay
 * @version 01
 * @since 02.06.2018
 */
