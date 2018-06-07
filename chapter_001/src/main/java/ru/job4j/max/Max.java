@@ -11,15 +11,11 @@ public class Max {
 	
 	/**
 	* method for Max number find
-	* @param int, int
+	* @param first, second
 	*
 	*/
 	
 	public int max(int first, int second) {
-		if (first > second) {
-			return first;
-			} else { 
-		return second;
-		}
+		return first > second ? first : second;
 	}	
 }
