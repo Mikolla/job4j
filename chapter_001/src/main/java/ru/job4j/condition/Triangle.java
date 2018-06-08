@@ -70,17 +70,5 @@ public class Triangle {
     }
 
 
-
-    public static void main(String[] args) {
-        System.out.println("triangle");
-
-        Point a = new Point(0, 3);
-        Point b = new Point(4, 0);
-        Point c = new Point(0, 0);
-
-        Triangle triangle = new Triangle(a, b, c);
-        System.out.println(triangle.area());
-
-    }
   
 }
