@@ -23,7 +23,6 @@ public class CounterTest {
         int start = 1;
         int finish = 10;
         Counter cou = new Counter();
-        System.out.println(cou.add(start, finish));
         int result = cou.add(start, finish);
         assertThat(result, is(30));
     }
