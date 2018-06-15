@@ -38,7 +38,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenDataNotMonoEvenAmount() {
+    public void whenDataNotMonoEvenAmountFalse() {
         MatrixCheck check = new MatrixCheck();
         boolean[][] input = new boolean[][] {
                 {true, true, true, true},
@@ -52,17 +52,17 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenDataNotMonoEvenAmount1() {
+    public void whenDataNotMonoEvenAmountTrue() {
         MatrixCheck check = new MatrixCheck();
         boolean[][] input = new boolean[][] {
-                {true, true, true, false},
-                {true, true, false, true},
-                {true, false, true, true},
-                {true, true, true, true}
+                {true, false, false, true},
+                {false, true, true, false},
+                {false, true, true, false},
+                {true, false, false, true}
 
         };
         boolean result = check.mono(input);
-        assertThat(result, is(false));
+        assertThat(result, is(true));
     }
 
 }
