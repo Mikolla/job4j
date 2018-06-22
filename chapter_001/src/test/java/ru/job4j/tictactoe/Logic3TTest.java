@@ -39,6 +39,7 @@ public class Logic3TTest {
         assertThat(login.hasGap(), is(true));
     }
 
+
     @Test
     public void myTesto() {
         Figure3T[][] table = {
