@@ -1,15 +1,34 @@
 package ru.job4j.tictactoe;
 
+import java.util.function.Predicate;
+
 public class Logic3T {
     private final Figure3T[][] table;
 
     public Logic3T(Figure3T[][] table) {
-        System.out.println("Видимо прога запустилась Гра началась");
-
-        this.table = table;
+               this.table = table;
 
 
     }
+
+
+    public boolean fillBy(Predicate<Figure3T> predicate, int startX, int startY, int deltaX, int deltaY) {
+        boolean result = true;
+        for (int index = 0; index != this.table.length; index++) {
+            Figure3T cell = this.table[startX][startY];
+            startX += deltaX;
+            startY += deltaY;
+            if (!predicate.test(cell)) {
+                result = false;
+                break;
+            }
+        }
+        return result;
+    }
+
+
+
+
 
     public boolean isWinnerX()
     {
@@ -21,113 +40,42 @@ public class Logic3T {
             System.out.println();
         }
 
-
-
-     boolean result=true;
-        for (int i = 0; i <table.length ; i++) {
-            result = true;
-            for (int j = 0; j <table[i].length-1 ; j++) {
-              if ( !(table[i][j].hasMarkX() && table[i][j+1].hasMarkX()) ) {
-                       result = false; break;
-              }
-            }
-            if(result) {return result;}
-
-            result = true;
-            for (int j = 0; j <table[i].length-1 ; j++) {
-                if ( !(table[j][i].hasMarkX() && table[j+1][i].hasMarkX()) ) {
-                    result = false; break;
-                }
-            }
-            if(result) {return result;}
-        }
-
-        result = true;
-        for (int i = 0; i < table.length-1; i++) {
-            if(  !(table[i][i].hasMarkX() && table[i+1][i+1].hasMarkX()) ) {
-                result = false; break;
-            }
-        }
-        if(result) {return result;}
-
-        result = true;
-        for (int i = 0; i < table.length-1; i++) {
-            System.out.println( (table.length-1-i) + " " + i);
-            if(  !( table[table.length-1-i][i].hasMarkX() && table[table.length-i-2][i+1].hasMarkX() ) ) {
-                result = false;
-                System.out.println(false); break;
-            }
-        }
-
-
-
-        return result;
+        return this.fillBy(Figure3T::hasMarkX, 0, 0, 1, 0) ||
+                this.fillBy(Figure3T::hasMarkX, 0, 1, 1, 0) ||
+                this.fillBy(Figure3T::hasMarkX, 0, 2, 1, 0) ||
+                this.fillBy(Figure3T::hasMarkX, 0, 0, 0, 1) ||
+                this.fillBy(Figure3T::hasMarkX, 1, 0, 0, 1) ||
+                this.fillBy(Figure3T::hasMarkX, 2, 0, 0, 1) ||
+                this.fillBy(Figure3T::hasMarkX, 0,0, 1, 1) ||
+                this.fillBy(Figure3T::hasMarkX, this.table.length - 1 , 0, -1, 1);
 
     }
 
     public boolean isWinnerO() {
 
-            for (int i = 0; i < table.length ; i++)
-            {
-                for (int j = 0; j < table[i].length ; j++) {
-                    System.out.print(table[i][j].hasMarkX() + " ");
-                }
-                System.out.println();
+        for (int i = 0; i < table.length ; i++)
+        {
+            for (int j = 0; j < table[i].length ; j++) {
+                System.out.print(table[i][j].hasMarkX() + " ");
             }
+            System.out.println();
+        }
+
+        return this.fillBy(Figure3T::hasMarkO, 0, 0, 1, 0) ||
+                this.fillBy(Figure3T::hasMarkO, 0, 1, 1, 0) ||
+                this.fillBy(Figure3T::hasMarkO, 0, 2, 1, 0) ||
+                this.fillBy(Figure3T::hasMarkO, 0, 0, 0, 1) ||
+                this.fillBy(Figure3T::hasMarkO, 1, 0, 0, 1) ||
+                this.fillBy(Figure3T::hasMarkO, 2, 0, 0, 1) ||
+                this.fillBy(Figure3T::hasMarkO, 0,0, 1, 1) ||
+                this.fillBy(Figure3T::hasMarkO, this.table.length - 1 , 0, -1, 1);
 
 
-
-            boolean result=true;
-            for (int i = 0; i <table.length ; i++) {
-                result = true;
-                for (int j = 0; j <table[i].length-1 ; j++) {
-                    if ( !(table[i][j].hasMarkO() && table[i][j+1].hasMarkO()) ) {
-                        result = false; break;
-                    }
-                }
-                if(result) {return result;}
-
-                result = true;
-                for (int j = 0; j <table[i].length-1 ; j++) {
-                    if ( !(table[j][i].hasMarkO() && table[j+1][i].hasMarkO()) ) {
-                        result = false; break;
-                    }
-                }
-                if(result) {return result;}
-            }
-
-            result = true;
-            for (int i = 0; i < table.length-1; i++) {
-                if(  !(table[i][i].hasMarkO() && table[i+1][i+1].hasMarkO()) ) {
-                    result = false; break;
-                }
-            }
-                if(result) {return result;}
-
-            result = true;
-            for (int i = 0; i < table.length-1; i++) {
-                System.out.println( (table.length-1-i) + " " + i);
-                if(  !( table[table.length-1-i][i].hasMarkO() && table[table.length-i-2][i+1].hasMarkO() ) ) {
-                    result = false;
-                    System.out.println(false); break;
-                }
-            }
-
-
-
-            return result;
     }
 
     public boolean hasGap() {
 
-      /*  Figure3T[][] a = table;
-        for (int i = 0; i <table.length ; i++) {
-            for (int j = 0; j < table[i].length ; j++) {
-                System.out.print(table[i][j]);
-            }
-            System.out.println();
 
-        } */
 
 
 
