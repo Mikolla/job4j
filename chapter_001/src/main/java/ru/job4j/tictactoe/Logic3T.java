@@ -2,6 +2,13 @@ package ru.job4j.tictactoe;
 
 import java.util.function.Predicate;
 
+/**
+ * @author Bondarenko.
+ * @since 25.6.18.
+ * @version 1.
+ */
+
+
 public class Logic3T {
     private final Figure3T[][] table;
 
@@ -75,11 +82,14 @@ public class Logic3T {
 
     public boolean hasGap() {
 
+        boolean result = false;
 
-
-
-
-
-        return true;
+        for (int i = 0; i < table.length ; i++)
+        {
+            for (int j = 0; j < table[i].length ; j++) {
+               if( !table[i][j].hasMarkX() && !table[i][j].hasMarkO()) {result = true; return  result;}
+            }
+        }
+        return false;
     }
 }
