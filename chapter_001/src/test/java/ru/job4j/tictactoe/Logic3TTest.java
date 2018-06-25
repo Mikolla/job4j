@@ -93,7 +93,7 @@ public class Logic3TTest {
 
 
     @Test
-    public void DiagonalUpTestX() {
+    public void diagonalUpTestX() {
         Figure3T[][] table = {
                 {new Figure3T(true), new Figure3T(false), new Figure3T(true)},
                 {new Figure3T(false), new Figure3T(true), new Figure3T(false)},
@@ -104,7 +104,7 @@ public class Logic3TTest {
     }
 
     @Test
-    public void DiagonalDownTestX() {
+    public void diagonalDownTestX() {
         Figure3T[][] table = {
                 {new Figure3T(true), new Figure3T(false), new Figure3T(true)},
                 {new Figure3T(false), new Figure3T(true), new Figure3T(false)},
@@ -115,7 +115,7 @@ public class Logic3TTest {
     }
 
     @Test
-    public void DiagonalUpTestO() {
+    public void diagonalUpTestO() {
         Figure3T[][] table = {
                 {new Figure3T(false), new Figure3T(true), new Figure3T(true)},
                 {new Figure3T(true), new Figure3T(false), new Figure3T(false)},
@@ -126,7 +126,7 @@ public class Logic3TTest {
     }
 
     @Test
-    public void DiagonalDownTestO() {
+    public void diagonalDownTestO() {
         Figure3T[][] table = {
                 {new Figure3T(false), new Figure3T(true), new Figure3T(false)},
                 {new Figure3T(true), new Figure3T(false), new Figure3T()},
