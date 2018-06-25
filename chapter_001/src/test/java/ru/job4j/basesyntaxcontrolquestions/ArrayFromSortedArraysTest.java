@@ -4,6 +4,13 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * @author Bondarenko.
+ * @since 26.6.18.
+ * @version 1.
+ * создание отсортированного массива из 2х отсортированных массивов - тест
+ */
+
 public class ArrayFromSortedArraysTest {
 
     @Test

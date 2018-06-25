@@ -1,12 +1,15 @@
 package ru.job4j.basesyntaxcontrolquestions;
+/**
+ * @author Bondarenko.
+ * @since 26.6.18.
+ * @version 1.
+ * создание отсортированного массива из 2х отсортированных массивов
+ */
 
-public class ArrayFromSortedArrays
-{
+public class ArrayFromSortedArrays {
 
-    public int[] doArray (int[] one, int[] two) {
-
+    public int[] doArray(int[] one, int[] two) {
         int[] result = new int[one.length + two.length];
-
         for (int k = 0, i = 0, j = 0; k < result.length; k++) {
 
             if (i > one.length - 1) {
