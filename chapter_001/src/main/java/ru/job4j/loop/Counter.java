@@ -5,15 +5,12 @@ package ru.job4j.loop;
  * @since 0.1
  */
 
-
 public class Counter {
-
     /**
      * Считает сумму четных чисел в заданном интервале.
-     * @param int start, finish.
+     * @param  start, finish.
      * @return Сумма.
      */
-
     public int add(int start, int finish) {
         int sum = 0;
 

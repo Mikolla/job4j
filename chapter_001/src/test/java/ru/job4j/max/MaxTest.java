@@ -17,14 +17,10 @@ public class MaxTest {
 */
 @Test
 public void maxTester() {
-	
 	int first = 5;
 	int second = 4;
 	Max maxi = new Max();
 	int result = maxi.max(first, second);
-	int[][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-
 	assertThat(result, is(first));
 }
- 
 }

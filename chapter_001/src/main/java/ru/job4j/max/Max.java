@@ -2,8 +2,8 @@ package ru.job4j.max;
 
 /**
  * @author Bondarenko.
- * @sinse 7.6.18.
- * @ver. 347.
+ * @since  7.6.18.
+ * @version 347.
  */
 
 
@@ -13,15 +13,10 @@ public class Max {
 	 * @param first, second
 	 *
 	 */
-
 	public int max(int first, int second) {
 		return first > second ? first : second;
 	}
 	public int max(int first, int second, int third) {
 		return max(max(first, second), max(second, third));
 	}
-
-
-
-
 }

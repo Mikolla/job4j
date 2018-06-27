@@ -19,12 +19,10 @@ public class CounterTest {
      */
     @Test
     public void countTester() {
-
         int start = 1;
         int finish = 10;
         Counter cou = new Counter();
         int result = cou.add(start, finish);
         assertThat(result, is(30));
     }
-
 }

@@ -33,5 +33,4 @@ public class ConverterTest {
         int result = converter.euroToRuble(2);
         assertThat(result, is(140));
     }
-
 }

@@ -18,7 +18,6 @@ public class ArrayDuplicate {
         int uniq = array.length;
         for (int out = 0; out < uniq; out++) {
              for (int in = out + 1; in < uniq; in++) {
-
               if (array[out].equals(array[in])) {
                   String temp = array[in];
                  array[in] = array[uniq - 1];

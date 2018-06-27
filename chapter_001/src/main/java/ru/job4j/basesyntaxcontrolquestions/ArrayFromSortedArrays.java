@@ -11,7 +11,6 @@ public class ArrayFromSortedArrays {
     public int[] doArray(int[] one, int[] two) {
         int[] result = new int[one.length + two.length];
         for (int k = 0, i = 0, j = 0; k < result.length; k++) {
-
             if (i > one.length - 1) {
                 result[k] = two[j];
                 j++;
@@ -26,9 +25,6 @@ public class ArrayFromSortedArrays {
                 j++;
             }
         }
-
             return result;
         }
-
-
 }

@@ -20,7 +20,6 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
-
     /**
      *subtract test
      */
@@ -43,7 +42,6 @@ public class CalculatorTest {
         double expected = 3D;
         assertThat(result, is(expected));
     }
-
     /**
      *muliply test
      */

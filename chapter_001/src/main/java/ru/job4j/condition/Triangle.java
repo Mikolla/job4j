@@ -3,7 +3,7 @@ package ru.job4j.condition;
 /**
  * Метод вычисления площади треугольника по формуле Герона.
  * @author Bondarenko Nikolay.
- * @sinse 8.6.18.
+ * @since 8.6.18.
  */
 
 
@@ -11,12 +11,6 @@ public class Triangle {
   private Point a;
   private Point b;
   private Point c;
-
-    /**
-     * @param Point A.
-     * @param Point B.
-     * @param Point C.
-     */
 
     public Triangle(Point a, Point b, Point c) {
        this.a = a;
@@ -37,7 +31,6 @@ public class Triangle {
     public double period(double ab, double ac, double bc) {
         return (ab + ac + bc) / 2;
     }
-
     /**
      * Метод проверка существования треугольника.
      * Любая сторона не более суммы 2-х других.
@@ -63,12 +56,8 @@ public class Triangle {
         double bc = this.b.distanceTo(this.c);
         double p = this.period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
-
             rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
         }
         return rsl;
     }
-
-
-  
 }
