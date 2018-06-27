@@ -6,7 +6,6 @@ package ru.job4j.max;
  * @version 347.
  */
 
-
 public class Max {
 	/**
 	 * method for Max number find

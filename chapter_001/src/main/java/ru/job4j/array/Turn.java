@@ -3,7 +3,7 @@ package ru.job4j.array;
 import java.util.Arrays;
 
 /**
- * array reverse
+ * array  reverse
  * @author Bondarenko.
  * @sinse 13.6.18.
  * @ver. 1.

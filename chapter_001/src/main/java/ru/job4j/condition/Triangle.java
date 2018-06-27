@@ -6,7 +6,6 @@ package ru.job4j.condition;
  * @since 8.6.18.
  */
 
-
 public class Triangle {
   private Point a;
   private Point b;

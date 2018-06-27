@@ -24,6 +24,6 @@ public class Point {
         System.out.println("x2 = " + b.x);
         System.out.println("y2 = " + b.y);
         double result = a.distanceTo(b);
-        System.out.println("Расстояние между точками А и В : " + result);
+        System.out.println("Расстояние между точками  А и В : " + result);
     }
 }

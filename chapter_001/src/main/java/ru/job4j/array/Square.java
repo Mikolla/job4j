@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
 /**
- * @author Bondarenko
+ * @author  Bondarenko
  * @version $1$
  * @since 12.6.18
  */

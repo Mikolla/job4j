@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class ArrayDuplicate {
     /**
-     * Duplicate remover
+     * Duplicate  remover
      * @param array source
      * @return array without duplicates
      */

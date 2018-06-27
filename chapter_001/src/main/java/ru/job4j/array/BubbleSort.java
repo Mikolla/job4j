@@ -10,7 +10,7 @@ package ru.job4j.array;
 public class BubbleSort {
 
     /**
-     * array sorting method
+     * array sorting  method
      * @param a - array for sorting
      * @return a - already sorted array
      */

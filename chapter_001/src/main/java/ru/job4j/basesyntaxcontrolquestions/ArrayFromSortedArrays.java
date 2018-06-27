@@ -3,7 +3,7 @@ package ru.job4j.basesyntaxcontrolquestions;
  * @author Bondarenko.
  * @since 26.6.18.
  * @version 1.
- * создание отсортированного массива из 2х отсортированных массивов
+ * создание отсортированного массива из 2х  отсортированных массивов
  */
 
 public class ArrayFromSortedArrays {

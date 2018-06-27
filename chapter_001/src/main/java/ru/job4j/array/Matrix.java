@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class Matrix {
     /**
-     * multiplication table creation
+     * multiplication table  creation
      * @param size of table
      * @return table array
      */

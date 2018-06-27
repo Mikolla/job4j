@@ -9,7 +9,7 @@ package ru.job4j.array;
 public class MatrixCheck {
     /**
      * Check if diagonals contains all true or all false elements
-     * @param data array
+     * @param  data array
      * @return result
      */
     public boolean mono(boolean[][] data) {
