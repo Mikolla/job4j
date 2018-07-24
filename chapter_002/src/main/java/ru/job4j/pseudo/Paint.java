@@ -9,7 +9,8 @@ public class Paint {
     }
 	
 	public static void main(String[] args) {
-	    new Paint().draw(new Square());
+        Paint paint = new Paint();
+	    paint.draw(new Square());
     }
 
 }
