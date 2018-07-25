@@ -10,6 +10,13 @@ import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+/**
+* Test.
+*
+* @author Bondarenko Nikolay
+* @version 01
+* @since 24.07.2018
+*/
 
 public class PaintTest {
 
@@ -55,5 +62,4 @@ public class PaintTest {
         );
         System.setOut(stdout);
     }
-
 }

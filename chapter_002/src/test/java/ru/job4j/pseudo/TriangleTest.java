@@ -8,7 +8,13 @@ import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-
+/**
+* Test.
+*
+* @author Bondarenko Nikolay
+* @version 01
+* @since 24.07.2018
+*/
 public class TriangleTest {
 
     @Test
@@ -22,10 +28,7 @@ public class TriangleTest {
         .append("\r\n+  +")
         .append("\r\n+   +")
         .append("\r\n++++++")
-		.toString();
-								
-			assertThat(result, is(expected));					
-        
-    }
-	
+		.toString();								
+			assertThat(result, is(expected));		       
+    }	
 }
