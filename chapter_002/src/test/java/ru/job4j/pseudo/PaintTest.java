@@ -52,11 +52,11 @@ public class PaintTest {
                 is(
                         new StringBuilder()
         .append("+")
-	    .append("\r\n++")
-        .append("\r\n+ +")
-        .append("\r\n+  +")
-        .append("\r\n+   +")
-        .append("\r\n++++++\r\n")
+	    .append(System.lineSeparator() + "++")
+        .append(System.lineSeparator() + "+ +")
+        .append(System.lineSeparator() + "+  +")
+        .append(System.lineSeparator() + "+   +")
+        .append(System.lineSeparator() + "++++++" + System.lineSeparator())
 		.toString()
                 )
         );

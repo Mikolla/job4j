@@ -23,11 +23,11 @@ public class TriangleTest {
 		String result = triangle.draw();
 		String expected = new StringBuilder()
         .append("+")
-	    .append("\r\n++")
-        .append("\r\n+ +")
-        .append("\r\n+  +")
-        .append("\r\n+   +")
-        .append("\r\n++++++")
+	    .append(System.lineSeparator() + "++")
+        .append(System.lineSeparator() + "+ +")
+        .append(System.lineSeparator() + "+  +")
+        .append(System.lineSeparator() + "+   +")
+        .append(System.lineSeparator() + "++++++")
 		.toString();								
 			assertThat(result, is(expected));		       
     }	
