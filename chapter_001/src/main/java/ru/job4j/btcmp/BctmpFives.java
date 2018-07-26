@@ -1,9 +1,10 @@
 package ru.job4j.btcmp;
 
 public class BctmpFives {
-    int seconds;
+
     public static int getCountSecondsPassedInCurrentHour(int seconds) {
-        return seconds%3600;
+
+        return seconds % 3600;
     }
 
     public static void main(String[] args) {

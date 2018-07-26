@@ -1,8 +1,8 @@
 package ru.job4j.btcmp;
 
 public class BtcmpFours {
-    int celsium;
-    public static Double convertCelsiumToFahrenheit(int celsium) {
+
+    public static double convertCelsiumToFahrenheit(int celsium) {
         return  celsium * 1.8 + 32;
     }
 

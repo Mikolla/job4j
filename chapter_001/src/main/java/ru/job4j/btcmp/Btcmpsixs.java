@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 
 public class Btcmpsixs {
-    int a, b, c;
+
     public static long getVolume(int a, int b, int c) {
         return (long) (a * b * c) * 1000;
     }
