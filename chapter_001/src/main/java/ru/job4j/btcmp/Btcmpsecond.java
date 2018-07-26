@@ -10,7 +10,6 @@ public class Btcmpsecond {
             System.out.println(string);
         }
     }
-
     public static void main(String[] args) {
         new Btcmpsecond().prin();
     }
