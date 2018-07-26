@@ -7,14 +7,14 @@ package ru.job4j.btcmp;
  */
 public class MinFinder {
     static int findMinOfTwo(int a, int b) {
-        return a > b ? a : b;
+        return a < b ? a : b;
     }
-    protected int finMinOfFour(int b, int c, int d, int e) {
+    static int finMinOfFour(int b, int c, int d, int e) {
          int min1 = findMinOfTwo(b , c);
          int min2 = findMinOfTwo(d , e);
          return findMinOfTwo(min1, min2);
     }
     public static void main(String[] args) {
-        System.out.println(new MinFinder().finMinOfFour(445, 57, 98, 123));
+        System.out.println(finMinOfFour(445, 57, 98, 123));
     }
 }

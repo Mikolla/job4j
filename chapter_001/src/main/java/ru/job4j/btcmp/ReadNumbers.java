@@ -15,11 +15,11 @@ public class ReadNumbers {
         String[] strings = string.split(",");
         for (String str: strings) {
             int number = Integer.parseInt(str);
-if(number%2 == 0) {
-    System.out.print((number + " "));
-                  }
-                                  }
-                                                          }
+            if(number % 2 == 0) {
+                   System.out.print((number + " "));
+            }
+        }
+    }
 
     public static void main(String[] args) throws IOException {
         new ReadNumbers().readToArrayAndPrint();
