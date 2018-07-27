@@ -9,11 +9,17 @@ public class Fbit {
      * @return new value with one bit flipped
      */
     public static int flipBit(int value, int bitIndex) {
-        System.out.println(Integer.toBinaryString(value));
-        return 1; // put your implementation here
+        //System.out.println(Integer.toBinaryString(value));
+        // int b = (int)Math.pow(2,bitIndex-1);
+        //System.out.println(b);
+        // System.out.println(Integer.toBinaryString(b));
+        int b =  1 << bitIndex-1;
+        //System.out.println( b);
+
+        return value ^ b; // put your implementation here
     }
 
     public static void main(String[] args) {
-        System.out.println(flipBit(8,1));
+        System.out.println(flipBit(45,4));
     }
 }
