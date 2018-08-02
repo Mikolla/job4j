@@ -11,7 +11,7 @@ public class PrintTextAndRole {
             stringBuilder.append(rolesStrings).append(":\n");
             for (int i = 0; i < textLines.length; i++) {
                 if(textLines[i].startsWith(rolesStrings + ":")) {
-                    stringBuilder.append(i+1 + ")" + textLines[i].replaceFirst(rolesStrings + ":","")).append("\n");
+                    stringBuilder.append(i+1).append(")").append(textLines[i].replaceFirst(rolesStrings + ":","")).append("\n");
                 }
             }
             stringBuilder.append("\n");
