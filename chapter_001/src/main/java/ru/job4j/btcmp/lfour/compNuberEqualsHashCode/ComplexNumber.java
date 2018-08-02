@@ -24,6 +24,7 @@ public final class ComplexNumber {
         //1
         if (this == o) return true;
         //2
+
         if (o == null || getClass() != o.getClass()) return false;
         //3
         ComplexNumber that = (ComplexNumber) o;
@@ -49,13 +50,17 @@ public final class ComplexNumber {
     }
 
 
+    class B {
+
+    }
+
     public static void main(String[] args) {
-        double dd = 12345367457575676785678d;
-        System.out.println(dd);
-        long ddlong = Double.doubleToLongBits(dd);
-        System.out.println(ddlong);
-        System.out.println((int)((ddlong >>> 32)));
-        System.out.println((int)((ddlong - (ddlong >>> 32))));
+        ComplexNumber a = new ComplexNumber(1, 1);
+        int b = 4;
+        System.out.println( a.equals(b));
+
+
+      //  System.out.println(a.hashCode() == b.hashCode());
     }
 
 }
