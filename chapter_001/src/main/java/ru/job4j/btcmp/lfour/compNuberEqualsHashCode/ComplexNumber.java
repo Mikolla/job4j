@@ -27,9 +27,14 @@ public final class ComplexNumber {
 
         if (o == null || getClass() != o.getClass()) return false;
         //3
+       /* ComplexNumber that = (ComplexNumber) o;
+        return Double.compare(that.re, re) == 0 &&
+                Double.compare(that.im, im) == 0; */
         ComplexNumber that = (ComplexNumber) o;
+         //приведение делается для того, чтобы иметь возможность сравниить параметры наших объектов
         return Double.compare(that.re, re) == 0 &&
                 Double.compare(that.im, im) == 0;
+
     }
 
    /* @Override
@@ -50,17 +55,11 @@ public final class ComplexNumber {
     }
 
 
-    class B {
-
-    }
-
     public static void main(String[] args) {
-        ComplexNumber a = new ComplexNumber(1, 1);
+        ComplexNumber a = new ComplexNumber(0, 1);
         int b = 4;
-        System.out.println( a.equals(b));
-
-
-      //  System.out.println(a.hashCode() == b.hashCode());
+        System.out.println(a.equals(b));
+       // System.out.println(a.hashCode() == b.hashCode());
     }
 
 }
