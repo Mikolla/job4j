@@ -10,11 +10,23 @@ import java.io.InputStream;
 public class SumChecker {
     public static int checkSumOfStream(InputStream inputStream) throws IOException {
         // your implementation here
-        int bytes, sum = 0;
+      /*  int bytes, sum = 0;
         while ((bytes = inputStream.read())!=-1) {
             sum = Integer.rotateLeft(sum,1)^bytes;
         }
-        return sum;
+        return sum; */
+
+        int a = inputStream.read();
+        int b = inputStream.read();
+        int c = inputStream.read();
+
+        int d = Integer.rotateLeft(0,1)^a;
+        int e = Integer.rotateLeft(d,1)^b;
+        int f = Integer.rotateLeft(e,1)^c;
+
+        return f;
+
+
     }
 
     public static void main(String[] args) throws IOException {
