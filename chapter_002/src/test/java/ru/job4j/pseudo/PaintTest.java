@@ -1,5 +1,3 @@
-
-
 package ru.job4j.pseudo;
 
 import org.junit.After;
